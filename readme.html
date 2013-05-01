@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)file:///C:/Users/Tyler/appdata/local/temp/136.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8"><style>html {
+    margin: 0;
+    padding: 0; }
+
+body {
+    background-color: white;
+    border-radius: 3px;
+    border: 3px solid #EEE;
+    box-shadow: inset 0 0 0 1px #CECECE;
+    font-family: Helvetica,arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    width: 975px;
+    padding: 30px;
+    margin: 2em auto; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4;
+  text-decoration: none; }
+a:hover {
+  text-decoration: underline; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url("../../images/modules/styleguide/para.png") no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url("https://a248.e.akamai.net/assets.github.com/assets/primer/markdown/dirty-shade-0e7d81b119cc9beae17b0c98093d121fa0050a74.png") repeat-x 0 0;
+  border: 0 none;
+  color: #ccc;
+  height: 4px;
+  padding: 0; }
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+ul :last-child, ol :last-child {
+  margin-bottom: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  border-collapse: collapse; border-spacing: 0; padding: 0; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+
+.markdown-body code,.markdown-body tt{margin:0 2px;padding:0px 5px;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px}
+.markdown-body pre>code{margin:0;padding:0;white-space:pre;border:none;background:transparent}
+.markdown-body .highlight pre,.markdown-body pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}
+.markdown-body pre code,.markdown-body pre tt{background-color:transparent;border:none}
+.highlight{background:#ffffff}
+.highlight .c{color:#999988;font-style:italic}
+.highlight .err{color:#a61717;background-color:#e3d2d2}
+.highlight .k{font-weight:bold}
+.highlight .o{font-weight:bold}
+.highlight .cm{color:#999988;font-style:italic}
+.highlight .cp{color:#999999;font-weight:bold}
+.highlight .c1{color:#999988;font-style:italic}
+.highlight .cs{color:#999999;font-weight:bold;font-style:italic}
+.highlight .gd{color:#000000;background-color:#ffdddd}
+.highlight .gd .x{color:#000000;background-color:#ffaaaa}
+.highlight .ge{font-style:italic}
+.highlight .gr{color:#aa0000}
+.highlight .gh{color:#999999}
+.highlight .gi{color:#000000;background-color:#ddffdd}
+.highlight .gi .x{color:#000000;background-color:#aaffaa}
+.highlight .go{color:#888888}
+.highlight .gp{color:#555555}
+.highlight .gs{font-weight:bold}
+.highlight .gu{color:#800080;font-weight:bold}
+.highlight .gt{color:#aa0000}
+.highlight .kc{font-weight:bold}
+.highlight .kd{font-weight:bold}
+.highlight .kn{font-weight:bold}
+.highlight .kp{font-weight:bold}
+.highlight .kr{font-weight:bold}
+.highlight .kt{color:#445588;font-weight:bold}
+.highlight .m{color:#009999}
+.highlight .s{color:#d14}
+.highlight .na{color:#008080}
+.highlight .nb{color:#0086B3}
+.highlight .nc{color:#445588;font-weight:bold}
+.highlight .no{color:#008080}
+.highlight .ni{color:#800080}
+.highlight .ne{color:#990000;font-weight:bold}
+.highlight .nf{color:#990000;font-weight:bold}
+.highlight .nn{color:#555555}
+.highlight .nt{color:#000080}
+.highlight .nv{color:#008080}
+.highlight .ow{font-weight:bold}
+.highlight .w{color:#bbbbbb}
+.highlight .mf{color:#009999}
+.highlight .mh{color:#009999}
+.highlight .mi{color:#009999}
+.highlight .mo{color:#009999}
+.highlight .sb{color:#d14}
+.highlight .sc{color:#d14}
+.highlight .sd{color:#d14}
+.highlight .s2{color:#d14}
+.highlight .se{color:#d14}
+.highlight .sh{color:#d14}
+.highlight .si{color:#d14}
+.highlight .sx{color:#d14}
+.highlight .sr{color:#009926}
+.highlight .s1{color:#d14}
+.highlight .ss{color:#990073}
+.highlight .bp{color:#999999}
+.highlight .vc{color:#008080}
+.highlight .vg{color:#008080}
+.highlight .vi{color:#008080}
+.highlight .il{color:#009999}
+.highlight .gc{color:#999;background-color:#EAF2F5}
+.type-csharp .highlight .k{color:#0000FF}
+.type-csharp .highlight .kt{color:#0000FF}
+.type-csharp .highlight .nf{color:#000000;font-weight:normal}
+.type-csharp .highlight .nc{color:#2B91AF}
+.type-csharp .highlight .nn{color:#000000}
+.type-csharp .highlight .s{color:#A31515}
+.type-csharp .highlight .sc{color:#A31515}
+
+
+</style></head><body><h1>
+<a name="about-this-plugin" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#about-this-plugin"><span class="mini-icon mini-icon-link"></span></a>About this plugin</h1>
+
+<p>This plugin simply allows you to handle the POST upload process for a file input. It will upload files and place them in a path you specify, but any tracking of the files after it is uploaded is your responsibility. This plugin is just meant to provide a somewhat flexible way to validate and upload a file.</p>
+
+<h1>
+<a name="installation" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#installation"><span class="mini-icon mini-icon-link"></span></a>Installation</h1>
+
+<h4>
+<a name="as-a-plugin" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#as-a-plugin"><span class="mini-icon mini-icon-link"></span></a>As a plugin</h4>
+
+<ol>
+<li>Download, unzip and move 'ifupload' folder into your Cotonti plugin directory</li>
+<li> Install plugin through the administration panel and make sure configurations are to your preference</li>
+</ol><h4>
+<a name="as-a-standalone" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#as-a-standalone"><span class="mini-icon mini-icon-link"></span></a>As a standalone</h4>
+
+<ol>
+<li>Download and move and or rename inc/ifupload.functions.php and place into any folder</li>
+<li>Include in your extension</li>
+</ol><h1>
+<a name="example-usage" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#example-usage"><span class="mini-icon mini-icon-link"></span></a>Example Usage</h1>
+
+<p>This is an example for adding an image to a page with a custom page database column.</p>
+
+<h2>
+<a name="step-1" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#step-1"><span class="mini-icon mini-icon-link"></span></a>Step 1</h2>
+
+<p>Add any amount of file input fields into page.add.tpl. Currently file array inputs are <strong>NOT</strong> supported (e.g. test_upload[]). You can have multiple file inputs with different names.</p>
+
+<div class="highlight"><pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"test_upload"</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+<h2>
+<a name="step-2" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#step-2"><span class="mini-icon mini-icon-link"></span></a>Step 2</h2>
+
+<p>Add a file handler where ever you complete a POST operation. </p>
+
+<p>In this example, it is in a hook into <code>page.add.add.error</code>. This hook is just before adding the page into the database, but after page data validation.</p>
+
+<h5>
+<a name="example-1" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#example-1"><span class="mini-icon mini-icon-link"></span></a>Example 1</h5>
+
+<p>This example has the <code>ifupload_file_handle</code> function send errors through cot_error. In most circumstances, this is a tolerable method. In some circumstances, calling cot_error, depending where you are hooking at, will halt a process from continuing. To handle errors on your own, see example 2.</p>
+
+<div class="highlight"><pre><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">cot_error_found</span><span class="p">())</span>
+<span class="p">{</span>
+    <span class="k">require_once</span> <span class="nx">cot_incfile</span><span class="p">(</span><span class="s1">'ifupload'</span><span class="p">,</span> <span class="s1">'plug'</span><span class="p">);</span>
+
+    <span class="nv">$rtestupload</span> <span class="o">=</span> <span class="nx">ifupload_file_handle</span><span class="p">(</span><span class="s1">'test_upload'</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$rtestupload</span><span class="p">[</span><span class="s1">'success'</span><span class="p">])</span>
+    <span class="p">{</span>
+        <span class="c1">// The file was successfully uploaded</span>
+        <span class="c1">// Where this hook is at in this example, this will add the column to the page insert query</span>
+        <span class="nv">$rpage</span><span class="p">[</span><span class="s1">'page_custom_image'</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$rtestupload</span><span class="p">[</span><span class="s1">'file'</span><span class="p">][</span><span class="s1">'upload_path'</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="c1">// Add this if you are requiring the upload</span>
+        <span class="k">if</span><span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$rtestupload</span><span class="p">[</span><span class="s1">'errors'</span><span class="p">]))</span>
+        <span class="p">{</span>
+            <span class="nx">cot_error</span><span class="p">(</span><span class="s1">'You must select an upload'</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<h4>
+<a name="example-2" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#example-2"><span class="mini-icon mini-icon-link"></span></a>Example 2</h4>
+
+<p>This example shows how to handle your own errors. In some cases you won't want to send some error messages to the user or effect your POST processing by triggering <code>cot_error_found</code> with <code>cot_error</code>.</p>
+
+<div class="highlight"><pre><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">cot_error_found</span><span class="p">())</span>
+<span class="p">{</span>
+    <span class="k">require_once</span> <span class="nx">cot_incfile</span><span class="p">(</span><span class="s1">'ifupload'</span><span class="p">,</span> <span class="s1">'plug'</span><span class="p">);</span>
+
+    <span class="nv">$rtestupload</span> <span class="o">=</span> <span class="nx">ifupload_file_handle</span><span class="p">(</span><span class="s1">'test_upload'</span><span class="p">,</span>
+        <span class="k">array</span><span class="p">(</span>
+            <span class="s1">'use_cot_error'</span> <span class="o">=&gt;</span> <span class="k">false</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="p">);</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="nv">$rtestupload</span><span class="p">[</span><span class="s1">'success'</span><span class="p">])</span>
+    <span class="p">{</span>
+        <span class="nv">$rpage</span><span class="p">[</span><span class="s1">'page_custom_page_image'</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$rtestupload</span><span class="p">[</span><span class="s1">'file'</span><span class="p">][</span><span class="s1">'upload_path'</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="c1">// handle what errors to send to the user based on the error codes returned</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$rtestupload</span><span class="p">[</span><span class="s1">'error_codes'</span><span class="p">]))</span>
+        <span class="p">{</span>
+            <span class="k">foreach</span><span class="p">(</span><span class="nv">$rtestupload</span><span class="p">[</span><span class="s1">'error_codes'</span><span class="p">]</span> <span class="k">as</span> <span class="nv">$error_code</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="c1">// Only send error messages with the code 1 or 2 to the user. The others will be suppressed.</span>
+                <span class="k">switch</span><span class="p">(</span><span class="nv">$error_code</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
+                    <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>
+                        <span class="c1">// Of course you would avoid cot_error() if you didn't want to trigger cot_found_error()</span>
+                        <span class="nx">cot_error</span><span class="p">(</span><span class="nv">$rtestupload</span><span class="p">[</span><span class="s1">'errors'</span><span class="p">][</span><span class="nv">$error_code</span><span class="p">]);</span>
+                    <span class="k">break</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<h1>
+<a name="available-functions" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#available-functions"><span class="mini-icon mini-icon-link"></span></a>Available Functions</h1>
+
+<h4>
+<a name="ifupload_file_handle-name-array-options-" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#ifupload_file_handle-name-array-options-"><span class="mini-icon mini-icon-link"></span></a>ifupload_file_handle( $name, [array $options] )</h4>
+
+<p>Handles the POST upload process for a file input.</p>
+
+<ul>
+<li>
+<code>$name</code>: (string) The input name for the file to handle</li>
+<li>
+<p><code>$options</code>: (array) <code>optional</code>, Overwrite the default options</p>
+
+<p><strong>Options</strong></p>
+
+<table>
+<tbody><tr>
+<td>Property</td>
+        <td>Default</td>
+        <td>Description</td>
+    </tr>
+<tr>
+<td>use_cot_error</td>
+        <td>true</td>
+        <td>Have any file upload errors sent to cot_error.</td>
+    </tr>
+<tr>
+<td>use_safename</td>
+        <td>true</td>
+        <td>Use `cot_safename` from the upload API</td>
+    </tr>
+<tr>
+<td>use_file_check</td>
+        <td>true</td>
+        <td>Use `cot_file_check` from the upload API</td>
+    </tr>
+<tr>
+<td>upload_path</td>
+        <td>Value of `$cfg['plugin']['ifupload']['path']`</td>
+        <td>The path to move the uploaded file to.</td>
+    </tr>
+<tr>
+<td>custom_validator</td>
+        <td>false</td>
+        <td>Put the name of the callback you wish to use instead of the default file validator.</td>
+    </tr>
+<tr>
+<td>check_file_exists</td>
+        <td>true</td>
+        <td>Check to see if the file name already exists. If the file does exist and this is property is true, the file will return a 'File already exists' error.</td>
+    </tr>
+<tr>
+<td>special</td>
+        <td></td>
+        <td>Place a indentifier string you wish to append to a file. Nothing will be added if empty.</td>
+    </tr>
+<tr>
+<td>valid_extensions</td>
+        <td>Value of $cfg['plugin']['ifupload']['exts']</td>
+        <td>An array of valid extensions (without ".") to accept. If a file's extension isn't in this list, it will return a 'Invalid file extension error'</td>
+    </tr>
+<tr>
+<td>max_size</td>
+        <td></td>
+        <td>Set in bytes. If set other than empty, send an error on upload if the file size is too big. Empty is no limit.</td>
+    </tr>
+</tbody></table>
+</li>
+<li><p><code>return</code>: (array) See "Return examples" for further details</p></li>
+</ul><h4>
+<a name="ifupload_file_removepath" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#ifupload_file_removepath"><span class="mini-icon mini-icon-link"></span></a>ifupload_file_remove($path)</h4>
+
+<p>Delete file from the upload path</p>
+
+<ul>
+<li>
+<code>$path</code>: (string) The file path</li>
+<li>
+<code>return</code>: (boolean) Removal completed</li>
+</ul><h1>
+<a name="return-examples" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#return-examples"><span class="mini-icon mini-icon-link"></span></a>Return examples</h1>
+
+<p>Example of what <code>ifupload_file_handle</code> would return when successful or not</p>
+
+<h3>
+<a name="successful" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#successful"><span class="mini-icon mini-icon-link"></span></a>Successful</h3>
+
+<div class="highlight"><pre><span class="nv">$rtestupload</span> <span class="o">=</span> <span class="nx">ifupload_file_handle</span><span class="p">(</span><span class="s1">'test_upload'</span><span class="p">);</span>
+
+<span class="c1">// The above would return this if successful</span>
+<span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">'success'</span> <span class="o">=&gt;</span> <span class="k">true</span><span class="p">,</span>
+    <span class="s1">'file'</span> <span class="o">=&gt;</span> 
+        <span class="k">array</span><span class="p">(</span>
+            <span class="s1">'name'</span> <span class="o">=&gt;</span> <span class="s1">'uploadedfile.jpg'</span><span class="p">,</span>
+            <span class="s1">'size'</span> <span class="o">=&gt;</span> <span class="mi">648775</span><span class="p">,</span>
+            <span class="s1">'tmp_name'</span> <span class="o">=&gt;</span> <span class="s1">'/tmp/php8B9E.tmp'</span><span class="p">,</span>
+            <span class="s1">'error'</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="s1">'path'</span> <span class="o">=&gt;</span> <span class="s1">'static/'</span><span class="p">,</span>
+            <span class="s1">'upload_path'</span> <span class="o">=&gt;</span> <span class="s1">'static/uploadedfile.jpg'</span>
+        <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+
+<h3>
+<a name="not-successful" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#not-successful"><span class="mini-icon mini-icon-link"></span></a>Not Successful</h3>
+
+<div class="highlight"><pre><span class="nv">$rtestupload</span> <span class="o">=</span> <span class="nx">ifupload_file_handle</span><span class="p">(</span><span class="s1">'test_upload'</span><span class="p">);</span>
+
+<span class="c1">// The above would return something like this if not successful</span>
+<span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">'success'</span> <span class="o">=&gt;</span> <span class="k">false</span><span class="p">,</span>
+    <span class="s1">'errors'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+        <span class="mi">1</span> <span class="o">=&gt;</span> <span class="s1">'Invalid file input'</span><span class="p">,</span>
+        <span class="mi">2</span> <span class="o">=&gt;</span> <span class="s1">'Invalid file extension'</span>
+    <span class="p">),</span>
+    <span class="s1">'error_codes'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+        <span class="mi">0</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="mi">1</span> <span class="o">=&gt;</span> <span class="mi">2</span>
+    <span class="p">)</span>
+    <span class="s1">'error_messages'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+        <span class="mi">0</span> <span class="o">=&gt;</span> <span class="s1">'Invalid file input'</span><span class="p">,</span>
+        <span class="mi">1</span> <span class="o">=&gt;</span> <span class="s1">'Invalid file extension'</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+
+<h1>
+<a name="errors" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#errors"><span class="mini-icon mini-icon-link"></span></a>Errors</h1>
+
+<h2>
+<a name="error-codes-and-messages" class="anchor" href="file:///C:/Users/Tyler/appdata/local/temp/136.html#error-codes-and-messages"><span class="mini-icon mini-icon-link"></span></a>Error codes and messages</h2>
+
+<table>
+<tbody><tr>
+<td>Code</td>
+        <td>Constant</td>
+        <td>Message</td>
+        <td>Explanation</td>
+    </tr>
+<tr>
+<td>1</td>
+        <td>IFU_ECODE_FILE_NAME</td>
+        <td>Invalid file input</td>
+        <td>The file failed validation because it was empty, sizes didn't match or wasn't actually an uploaded file.</td>
+    </tr>
+<tr>
+<td>2</td>
+        <td>IFU_ECODE_FILE_EXT</td>
+        <td>Invalid file extension</td>
+        <td>The file failed validation because the file extension was not in the valid_extensions list</td>
+    </tr>
+<tr>
+<td>3</td>
+        <td>IFU_ECODE_FILE_CHECK</td>
+        <td>Invalid file</td>
+        <td>File failed validation because the file failed cot_check_file() if it was set in options</td>
+    </tr>
+<tr>
+<td>4</td>
+        <td>IFU_ECODE_FILE_EXISTS</td>
+        <td>File name already exists</td>
+        <td>File failed validation because the file name already exists</td>
+    </tr>
+<tr>
+<td>5</td>
+        <td>IFU_ECODE_FILE_ERROR</td>
+        <td>File failed to upload</td>
+        <td>The file failed to upload and this was trigger by $_FILES[$name]['error'] !== 0</td>
+    </tr>
+<tr>
+<td>5</td>
+        <td>IFU_ECODE_FILE_SIZE</td>
+        <td>File size is too big</td>
+        <td>File failed validation because the size of the file was being that max_size option</td>
+    </tr>
+</tbody></table></body></html>
