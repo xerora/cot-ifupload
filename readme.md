@@ -130,6 +130,11 @@ Handles the POST upload process for a file input.
 			<td>Use `cot_safename` from the upload API</td>
 		</tr>
 		<tr>
+			<td>file_name</td>
+			<td></td>
+			<td>Rename the file to the value set here if not empty</td>
+		</tr>
+		<tr>
 			<td>use_file_check</td>
 			<td>true</td>
 			<td>Use `cot_file_check` from the upload API</td>

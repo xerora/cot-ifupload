@@ -27,8 +27,9 @@ function ifupload_file_handle($name, $options = array())
 		'use_cot_error' => true,
 		'use_safename' => true, 
 		'use_file_check' => true,
+		'file_name' => '',
 		'upload_path' => $cfg['plugin']['ifupload']['path'],
-		'custom_validator' => false, 
+		'custom_validator' => false,
 		'check_file_exists' => true, 
 		'special' => '',
 		'max_size' => '',
@@ -102,18 +103,18 @@ function ifupload_file_sift($name, array $options)
     {
     	$file_data = $_FILES[$name];
     	$file = array(
-    		'name' => trim(ifupload_mb_basename(stripslashes($file_data['name']))),
     		'size' => intval($file_data['size']),
     		'path' => $options['upload_path'],
     		'extension' => ifupload_get_ext($file_data['name']),
     		'tmp_name' => $file_data['tmp_name'],
     		'error' => $file_data['error'],
     	);
-    	$file['upload_path'] = $options['upload_path'].$file['name'];
+    	$file['name'] = !empty($options['file_name']) ? $options['file_name'] : trim(ifupload_mb_basename(stripslashes($file_data['name'])));
     	if($options['special'])
     	{
     		$file['name'] = $options['special'].$file['name'];
     	}
+    	$file['upload_path'] = $options['upload_path'].$file['name'];
     }
 
     return $file;
